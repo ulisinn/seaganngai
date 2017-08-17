@@ -1,2 +1,2 @@
-# seaganngai
+# SeaganNgai.com
 small portfolio site
