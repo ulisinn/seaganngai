@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Resume = () => (
-    <div>logo</div>
+    <div>resume</div>
   )
 ;
 
