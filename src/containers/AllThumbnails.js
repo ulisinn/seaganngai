@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Video from '../components/Video';
-import Thumbnails from '../components/Thumbnails';
+import Thumbnails from '../containers/Thumbnails';
 
 // The Thumbnails component matches one of two different routes
 // depending on the full pathname

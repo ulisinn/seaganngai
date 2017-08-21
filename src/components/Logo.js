@@ -3,8 +3,17 @@ import {
   Link,
 } from 'react-router-dom';
 
+import styled from 'styled-components';
+
+const LogoWrapper = styled.div`
+  width: 100%;
+  max-width:400px;
+  @media (max-width: 480px) {
+    width: 90%;
+  }`;
+
 const Logo = ({ white, blue, black }) => (
-    <div style={{ width: '250px' }}>
+    <LogoWrapper>
       <Link to={`/`}>
         <svg id="Layer_1" viewBox="0 0 239.08 58.84">
           
@@ -75,7 +84,7 @@ const Logo = ({ white, blue, black }) => (
           </g>
         </svg>
       </Link>
-    </div>
+    </LogoWrapper>
   )
 ;
 

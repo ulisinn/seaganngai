@@ -5,19 +5,18 @@ import {
 
 import AllThumbnails from './AllThumbnails';
 
+import NavButton from '../components/NavButton';
+import CaretRight from '../components/CaretRight';
+
 export default class Home extends Component {
   
   render() {
     return (
-      <header>
-        <nav>
-          <ul>
-            <li><Link to='/contact'>Contact</Link></li>
-            <li><Link to='/resume'>Resume</Link></li>
-          </ul>
-        </nav>
+      <section>
+        <Link to='/resume'><NavButton><CaretRight />Resume</NavButton></Link>
+        <Link to='/contact'><NavButton><CaretRight />Contact</NavButton></Link>
         <AllThumbnails />
-      </header>
+      </section>
     );
   }
 }

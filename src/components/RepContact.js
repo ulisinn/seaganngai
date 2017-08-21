@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link, } from 'react-router-dom';
 
+import NavButton from './NavButton';
+import CaretRight from './CaretRight';
+
 const RepContact = () => (
     <div>
-      <nav>
-        <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/resume'>Resume</Link></li>
-        </ul>
-      </nav>
+      <Link to='/'><NavButton><CaretRight />Home</NavButton></Link>
+      <Link to='/contact'><NavButton><CaretRight />Contact</NavButton></Link>
       <p>Rep. Contact</p>
     </div>
   )
