@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Thumbnail = ({ index, title, imageSrc, state }) => (
     <li key={index}>
       <Link to={{
-        pathname: `/video/${index}`,
+        pathname: `/video&id=${index}`,
         state: state,
       }}><p>{title}</p>
         <img src={imageSrc} style={{ width: 200 }} alt={title}></img>

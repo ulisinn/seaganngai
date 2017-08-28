@@ -4,6 +4,7 @@ import Home from './Home';
 import Contact from '../components/RepContact';
 import Resume from '../components/Resume';
 import Video from '../components/Video';
+import ComingSoon from '../components/ComingSoon';
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -13,11 +14,12 @@ import Video from '../components/Video';
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Home} />
+      <Route exact path='/home' component={Home} />
       <Route exact path='/contact' component={Contact} />
       <Route exact path='/resume' component={Resume} />
-      <Route exact path='/video' component={Video} />
-      <Route path='/video/:id' component={Video}/>
+      {/*<Route path='/video/:id' component={Video}/>*/}
+      <Route path='/video' component={Video} />
+      <Route exact path='/' component={ComingSoon} />
     </Switch>
   </main>
 );

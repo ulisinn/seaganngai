@@ -1,0 +1,28 @@
+{
+  "portfolio": [
+    {
+      "id": "1",
+      "thumbnail": "http://www.addtothenoise.com/seaganngai/images/Defiance.jpg",
+      "video": "http://www.addtothenoise.com/seaganngai/videos/Defiance.mp4",
+      "title": "Defiance",
+      "director": "director 1",
+      "writer": "writer 1"
+    },
+    {
+      "id": "2",
+      "thumbnail": "http://www.addtothenoise.com/seaganngai/images/Granite_Flats_Season_2.jpg",
+      "video": "http://www.addtothenoise.com/seaganngai/videos/Granite_Flats_Season_2.mp4",
+      "title": "Granite Flats",
+      "director": "director 2",
+      "writer": "writer 2"
+    },
+    {
+      "id": "3",
+      "thumbnail": "http://www.addtothenoise.com/seaganngai/images/HITRECORD.jpg",
+      "video": "http://www.addtothenoise.com/seaganngai/videos/HITRECORD.mp4",
+      "title": "Hit Record",
+      "director": "director 3",
+      "writer": "writer 3"
+    }
+  ]
+}

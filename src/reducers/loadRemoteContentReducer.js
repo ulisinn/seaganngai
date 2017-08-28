@@ -11,7 +11,6 @@ import {
 } from '../store';
 
 export default function loadRemoteContent(state = {}, action) {
-  console.log('STATIC CONTENT REDUCER', action);
   switch (action.type) {
     case REMOTE_LOAD_PENDING:
       return {
@@ -24,6 +23,7 @@ export default function loadRemoteContent(state = {}, action) {
         remoteData: action.type,
       };
     case REMOTE_LOAD_SUCCESS:
+      console.log('STATIC CONTENT REDUCER', action);
       return {
         ...state,
         ...action.payload,
@@ -36,7 +36,7 @@ export default function loadRemoteContent(state = {}, action) {
         ...state,
         remoteData: REMOTE_DATA_READY,
       };
-
+    
     default:
       return state;
   }

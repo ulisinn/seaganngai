@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 
 import { Provider } from 'react-redux';
@@ -9,15 +9,15 @@ import store, { REMOTE_LOAD_SUCCESS } from './store';
 import App from './App';
 import './index.css';
 
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 const rootElement = document.getElementById('root');
 
 /*render((
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 ), document.getElementById('root'));*/
 
@@ -31,13 +31,13 @@ function _initialLoad() {
     
     render(
       <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
           <App />
-        </BrowserRouter>
+        </HashRouter>
       </Provider>,
       rootElement,
     );
   }
 }
 
-registerServiceWorker();
+// registerServiceWorker();
